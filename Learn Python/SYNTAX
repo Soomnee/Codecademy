@@ -70,3 +70,26 @@ full_text = greeting_text + question_text
 print(full_text)
 
 <Plus Equals>
+Python offers a shorthand for updating variables. When you have a number saved in a variable and want to add to the current value of the variable, you can use the += (plus-equals) operator.
+The plus-equals operator also can be used for string concatenation
+# First we have a variable with a number saved
+number_of_miles_hiked = 12
+# Then we need to update that variable
+# Let's say we hike another two miles today
+number_of_miles_hiked += 2
+# The new value is the old value
+# Plus the number after the plus-equals
+print(number_of_miles_hiked)
+# Prints 14
+hike_caption = "What an amazing time to walk through nature!"
+# Almost forgot the hashtags!
+hike_caption += " #nofilter"
+hike_caption += " #blessed"
+print(hike_caption)
+What an amazing time to walk through nature! #nofilter #blessed
+
+<Multi-line Strings>
+to_you = """Stranger, if you passing meet me and desire to speak to me, why
+  should you not speak to me?
+And why should I not speak to you?"""
+
