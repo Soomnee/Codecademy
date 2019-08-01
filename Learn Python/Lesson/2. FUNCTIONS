@@ -1,0 +1,291 @@
+<What is a Function?>
+In order to call a function, we use the syntax function_name().
+1.
+In script.py, we have made a function for you called sing_song. Call this function once to see what it prints out.
+>>>
+def sing_song():
+  print("You may say I'm a dreamer")
+  print("But I'm not the only one")
+  print("I hope some day you'll join us")
+  print("And the world will be as one")
+  
+# call sing_song() below:
+sing_song()
+
+<Write a Function>
+The heading starts with the keyword def and the name of the function, followed by parentheses, and a colon. The indented block of code performs some sort of operation. This syntax looks like:
+
+def function_name():
+  some code
+  
+1.
+Write a function called loading_screen that prints "This page is loading..." to the console.
+>>>
+def loading_screen():
+  print("This page is loading...")
+  
+2.
+Outside of the function body (unindented), call loading_screen().
+>>>
+loading_screen()
+
+<Whitespace>
+def greet_customer():
+    print("Welcome to Engrossing Grocers.")
+    print("Our special is mandarin oranges.")
+    print("Have fun shopping!")
+print("Cleanup on Aisle 6")
+##함수 정의 시 공백 유무의 차이
+
+<Parameters>
+1.
+The function mult_two_add_three() prints a number multiplied by 2 and added to 3. As it is written right now, the number that it operates on is always 5.
+
+Call the function and see what it prints to the console.
+>>>
+def mult_two_add_three():
+  number = 5
+  print(number*2 + 3)
+
+2.
+Now, modify the function definition so that it has a parameter called number. Then delete the number = 5 assignment on the first line of the function.
+Pass the number 1 into your function call.
+>>>
+def mult_two_add_three(number):
+  print(number*2 + 3)
+mult_two_add_three(1)
+
+3.
+Call the function with the value 5 as the argument.
+>>>
+mult_two_add_three(5)
+
+4.
+Call the function with the value -1 as the argument.
+>>>
+mult_two_add_three(-1)
+
+5.
+Call the function with the value 0 as the argument.
+>>>
+mult_two_add_three(0)
+
+<Multiple Parameters>
+1.
+The function mult_two_add_three takes a number, multiplies it by two and adds three. We want to make this more flexible. First, change the name of the function to mult_x_add_y.
+>>>
+def mult_x_add_y(number):
+  print(number*2 + 3)
+
+2.
+Now, add x and y as parameters of the function, after number.
+>>>
+def mult_x_add_y(number,x,y):
+  print(number*2 + 3)
+
+3.
+Inside the function, replace 2 in the print statement with x, and replace 3 in the print statement with y.
+>>>
+def mult_x_add_y(number,x,y):
+  print(number*x + y)
+  
+4.
+Call the function with these values:
+number: 5
+x: 2
+y: 3
+>>>
+def mult_x_add_y(number,x,y):
+  print(number*x + y)
+mult_x_add_y(5,2,3)
+
+<Keyword Arguments>
+1.
+We have defined a function create_spreadsheet, which just takes in a title, and prints that it is creating a spreadsheet.
+Run the code to see the function work on an input of "Downloads".
+>>>
+def create_spreadsheet(title):
+  print("Creating a spreadsheet called "+title)
+# Call create_spreadsheet() below with the required arguments:
+create_spreadsheet("Downloads")
+
+2.
+Add the parameter row_count to the function definition. Set the default value to be 1000.
+>>>
+def create_spreadsheet(title,row_count=1000):
+  print("Creating a spreadsheet called "+title)
+
+3.
+Change the print statement in the function to print “Creating a spreadsheet called title with row_count rows”, where title and row_count are replaced with their respective values.
+Remember, to concatenate a number to a string object, you’ll first have to cast row_count to a string using str(). Otherwise, you’ll get a TypeError.
+>>>
+def create_spreadsheet(title,row_count=1000):
+  print("Creating a spreadsheet called "+title+ " with " + str(row_count) + " rows" )
+create_spreadsheet("Downloads")
+
+4. 
+Call create_spreadsheet() with title set to "Applications" and row_count set to 10.
+>>>
+create_spreadsheet("Applications",10)
+
+<Returns>
+Functions can also return a value to the user so that this value can be modified or used later. When there is a result from a function that can be stored in a variable, it is called a returned function value. We use the keyword return to do this.
+
+1.
+The function calculate_age in script.py creates a variable called age that is the difference between the current year, and a birth year, both of which are inputs of the function. Add a line to return age.
+>>>
+def calculate_age(current_year, birth_year):
+  age = current_year - birth_year
+  return age
+ 
+2.
+Outside of the function, call calculate_age with values 2049 (current_year) and 1993 (birth_year) and save the value to a variable called my_age.
+>>>
+def calculate_age(current_year, birth_year):
+  age = current_year - birth_year
+  return age
+my_age=calculate_age(2049, 1993)
+
+3.
+Call calculate_age with values 2049 (current_year) and 1953 (birth_year) and save the value to a variable called dads_age.
+Print the string "I am X years old and my dad is Y years old" to the console, with my_age where the X is and dads_age where the Y is.
+>>>
+dads_age=calculate_age(2049,1953)
+print("I am "+str(my_age)+"years old and my dad is "+str(dads_age)+"years old")
+
+<Multiple Return Values>
+We can return several values by separating them with a comma:
+
+def square_point(x_value, y_value):
+  x_2 = x_value * x_value
+  y_2 = y_value * y_value
+  return x_2, y_2
+  
+1.
+Write a function called get_boundaries() that takes in two parameters, a number called target and a number called margin.
+It should create two variables:
+low_limit: target minus the margin
+high_limit: margin added to target
+>>>
+def get_boundaries(target, margin)
+		low_limit=target-margin
+     high_limit = target + margin
+    return low_limit, high_limit
+
+##여기서 에러가 났음, IndentationError: unindent does not match any outer indentation level -> 파이썬은 블록의 기준을 들여쓰기로 구분하여 프로그래밍하는데, 같은 레벨의 블록이 들여쓰기가 일치하지 않을 경우 발생###
+
+###Answer again
+>>>high_limit 앞에 들여쓰기가 한 번 더 된거다, 지워주면 됨 ^^!
+
+2.
+Return both low_limit and high_limit from the function, in that order.
+3.
+Call the function on the target 100 with a margin of 20. Save the returned values to variables called low and high.
+>>>
+low, high = get_boundaries(100, 20)
+#we added this print statement just to sanity-check our solution:
+print("Low limit: "+str(low)+", high limit: "+str(high))
+
+<Scope>
+Let’s say we have our function from the last exercise that creates a string about a special item:
+===
+def create_special_string(special_item):
+    return "Our special is " + special_item + "."
+===
+What if we wanted to access the variable special_item outside of the function? Could we use it?
+===
+def create_special_string(special_item):
+    return "Our special is " + special_item + "."
+print("I don't like " + special_item)
+===
+If we try to run this code, we will get a NameError, telling us that 'special_item' is not defined. The variable special_item has only been defined inside the space of a function, so it does not exist outside the function. We call the part of a program where special_item can be accessed its scope. The scope of special_item is only the create_special_string function.
+Variables defined outside the scope of a function may be accessible inside the body of the function:
+===
+header_string = "Our special is " 
+def create_special_string(special_item):
+    return header_string + special_item + "."
+print(create_special_string("grapes"))
+===
+There is no error here. header_string can be used inside the create_special_string function because the scope of header_string is the whole file. This file would produce:
+===
+Our special is grapes.
+
+1.
+Outside of the function calculate_age(), try to print current_year. Does it work?
+>>>
+NO
+
+2.
+What about age? Outside of calculate_age(), try to print age. Does it work?
+>>>
+NO
+
+3.
+Let’s try something different. Remove the parameter current_year so that it is no longer a parameter of calculate_age().
+>>>
+OK
+
+4.
+It’s the year 2048.
+Define current_year as a variable BEFORE defining the function and give it the value 2048. Now, every time calculate_age() is called, it should only take birth_year.
+>>>
+current_year = 2048
+def calculate_age(birth_year):
+  age = current_year - birth_year
+  return age
+
+5.
+Try to print current_year one last time. Does it work finally?
+>>>
+print(current_year)
+
+6.
+Hooray! Now we have current_year globally defined. Great work!
+Let’s make sure our function still works: print the value of calculate_age() with 1970 as the argument.
+>>>
+print(calculate_age(1970))
+
+<Review>
+1.
+Define a function called repeat_stuff that takes in two inputs, stuff, and num_repeats.
+We will want to make this function print a string with stuff repeated num_repeats amount of times. For now, only put an empty print statement inside the function.
+>>>
+def repeat_stuff(stuff,num_repeats):
+  print()
+
+2.
+Outside of the function, call repeat_stuff.
+You can use the value "Row " for stuff and 3 for num_repeats.
+>>>
+repeat_stuff("Row ",3)
+
+3.
+Change the print statement inside repeat_stuff to a return statement instead.
+It should return stuff*num_repeats.
+Note: Multiplying a string just makes a new string with the old one repeated! 
+===
+For example: 
+"na"*6
+===
+results in the string "nananananana".
+>>>
+def repeat_stuff(stuff,num_repeats):
+  return stuff*num_repeats
+repeat_stuff("Row ",3)
+
+4.
+Give the parameter num_repeats a default value of 10.
+>>>
+def repeat_stuff(stuff,num_repeats=10):
+  return stuff*num_repeats
+
+5.
+Add repeat_stuff("Row ", 3) and the string "Your Boat. " together and save the result to a variable called lyrics.
+>>>
+lyrics = repeat_stuff("Row ",3)+"Your Boat. "
+
+6.
+Create a variable called song and assign it the value of repeat_stuff called with the singular input lyrics.
+>>>
+song = repeat_stuff(lyrics)
+print(song)
