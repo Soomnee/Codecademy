@@ -1,0 +1,63 @@
+<Boolean Expressions>
+A boolean expression is a statement that can either be True or False.
+
+1.
+Determine if the following statements are boolean expressions or not. If they are, set the matching variable to the right to "Yes" and if not set the variable to "No". Here’s an example of what to do:
+Example statement:
+My dog is the cutest dog in the world.
+This is an opinion and not a boolean expression, so you would set example_statement to "No" in the editor to the right. Okay, now it’s your turn:
+
+Statement one:
+Dogs are mammals.
+
+Statement two:
+My dog is named Pavel.
+
+Statement three:
+Dogs make the best pets.
+
+Statement four:
+Cats are female dogs.
+
+>>>
+example_statement = "No"
+statement_one = "Yes"
+statement_two = "Yes"
+statement_three = "No"
+statement_four = "Yes"
+
+<Relational Operators: Equals and Not Equals>
+1.
+Determine if the following boolean expressions are True or False. Input your answer as True or False in the appropriate variable to the right.
+
+Statement one:
+(5 * 2) - 1 == 8 + 1
+
+Statement two:
+13 - 6 != (3 * 2) + 1
+
+Statement three:
+3 * (2 - 1) == 4 - 1
+
+>>>
+1.
+Determine if the following boolean expressions are True or False. Input your answer as True or False in the appropriate variable to the right.
+
+Statement one:
+
+(5 * 2) - 1 == 8 + 1
+
+Statement two:
+13 - 6 != (3 * 2) + 1
+
+Statement three:
+3 * (2 - 1) == 4 - 1
+
+
+>>>
+statement_one = True
+statement_two = False
+statement_three = True
+
+#True와 False에 ""를 씌워서 string화 하면 틀린다..
+
