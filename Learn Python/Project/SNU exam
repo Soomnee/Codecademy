@@ -1,0 +1,19 @@
+#아래 세 함수가 동일한 값을 가지고 와야 함
+#왜 Recursive1에서 오류가 나지? 문제 해결 필요
+
+def Recursive(N):
+    print(N)
+    if (N < 5):
+        Recursive(N + 1)
+
+def Recursive1(N):
+    repeat:
+        print(N)
+        N = N + 1
+    until(N > 5)
+
+def Recursive2(N):
+    print(N)
+    while(N <= 4):
+        N=N+1
+        print(N)     
