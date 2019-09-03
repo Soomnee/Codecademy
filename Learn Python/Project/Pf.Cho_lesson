@@ -1,0 +1,28 @@
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="640" height="480" id="video">
+<param name="movie" value="http://campusvodadm.autoever.com/Flash/Player/GLS/gp.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#000000" />
+<param name="allowScriptAccess" value="always" />
+<param name="allowFullScreen" value="true" />
+<param name="flashvars" value="config=http://campusvodadm.autoever.com/Flash/Player/GLSCapital&key=20161021_163918650" />
+<!--[if !IE]>-->
+<object type="application/x-shockwave-flash" data="http://campusvodadm.autoever.com/Flash/Player/GLS/gp.swf" width="640" height="480">
+    <param name="quality" value="high" />
+    <param name="bgcolor" value="#000000" />
+    <param name="allowScriptAccess" value="always" />
+    <param name="allowFullScreen" value="true" />
+    <param name="flashvars" value="config=http://campusvodadm.autoever.com/Flash/Player/GLSCapital&key=20161021_163918650" />
+<!--<![endif]-->
+<!--[if gte IE 6]>-->
+    <p>
+        Either scripts and active content are not permitted to run or Adobe Flash Player version
+        11.0.0 or greater is not installed.
+    </p>
+<!--<![endif]-->
+    <a href="http://www.adobe.com/go/getflashplayer">
+        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+    </a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
