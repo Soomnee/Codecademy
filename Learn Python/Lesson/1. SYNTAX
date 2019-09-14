@@ -2,8 +2,8 @@
 
 <Welcome>
 Change Codecademy to your name in the script to the right. Run the code to see what it does! As soon as you’re ready, move on to the next exercise to begin learning to write your own Python programs!
-my_name = "Sumin Shin"
-print("Hello and welcome " + my_name + "!")
+my_name = "Sumin Shin" 
+print("Hello and welcome " + my_name + "!") 
 
 <Comments>
 Documentation is an important step in programming. Write a comment describing the first program you want to write!
