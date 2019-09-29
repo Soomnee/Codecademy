@@ -1,4 +1,4 @@
 # Codecademy :)
 Archive for Sumin's everyday codecademy
 
-Power of continuity
+Let’s get it! 
